@@ -33,7 +33,7 @@ currentdate=$(date '+%d-%b-%Y_Bitr_')
 ipaddress=$(curl -s api.ipify.org)
 underscored_ip=$(echo $ipaddress | sed 's/\./_/g')
 currentdate+=$underscored_ip
-used_num_of_cores=`expr $num_of_cores - 1`
+used_num_of_cores=`expr $num_of_cores - 2`
 
 echo ""
 echo "You have a total number of $used_num_of_cores cores"
